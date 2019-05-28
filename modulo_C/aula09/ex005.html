@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 09 | ex 005</title>
+    <style>
+        body{
+            background-color: rgb(94, 162, 201);
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 18pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos do DOM</h1>
+    <p class="res">Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    -------------------------------------</br>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+        // var msg = window.document.getElementById('msg')
+        var msg = document.querySelector("div#msg")
+        var res = document.querySelector('p.res')
+
+        res.style.background = 'red'
+        res.innerHTML = 'paragrafo resultado'
+
+        msg.style.background = 'green'
+        msg.innerText = 'Estou aguardando.'
+        
+        corpo.style.background = 'gray'
+        p1.style.color = 'black'
+        
+        window.document.writeln(p1.innerText)
+        window.document.write('</br>')
+        window.document.writeln(p1.innerHTML)
+    </script>
+</body>
+</html>
