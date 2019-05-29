@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 10 | ex 007 - SOMANDO NÚMEROS</title>
+    <style>
+        div#res{
+            font: normal 14pt Arial;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: fit-content;
+            padding: 5px;
+            margin-top: 20px;
+            }
+        input#txt1, input#txt2{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>MÉDIA DAS NOTAS </h1>
+    <input type="number" name="" id="txt1" min="0" max="10"> +
+    <input type="number" name="" id="txt2" min="0" max="10">
+    <input type="button" value="SOMAR" onclick="somar()">
+    
+    <div id="res"></div>
+
+    <script>
+        function somar(){
+            var n1 = Number(window.document.getElementById('txt1').value)
+            var n2 = Number(window.document.querySelector('#txt2').value)
+            var soma = n1 + n2
+            var res = window.document.getElementById('res') 
+            if (soma/2 > 5){
+               res.style.backgroundColor = '#abcdef'; 
+            } else {
+                res.style.backgroundColor = 'rgb(252, 77, 77)'; 
+            }
+            res.innerText = `A média entre as notas ${n1} e ${n2} é ${soma/2}.`
+        }
+    </script>
+</body>
+</html>
