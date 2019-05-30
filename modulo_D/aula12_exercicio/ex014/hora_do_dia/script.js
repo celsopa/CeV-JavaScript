@@ -7,7 +7,6 @@ function carregar(){
     var hora = agora.getHours()
     var minuto = agora.getMinutes()
     msg.innerHTML = `Agora são ${hora}h${minuto}m`
-
     if (hora > 6 && hora < 12){
         img.src = "img/fotodia.png"
         document.body.style.background = '#6BBAE8'

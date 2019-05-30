@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What face?</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Face Generator</h1>
+    </header>
+    <section id="secao">
+        <div id='msg'>Vamos gerar sua imagem de perfil</div>
+        <div id="formulario">
+            <p>
+                <label for="nascimento">Ano de nascimento:</label>
+                <input type="number" name="nascimento" id="nascimento" min="1900" placeholder="2010">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radiosex" id="sexoh" checked>
+                <label for="sexoh">Masculino</label>
+                <input type="radio" name="radiosex" id="sexom">
+                <label for="sexom">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="GERAR IMAGEM" onclick="gerar()">
+            </p>
+         
+        </div>
+        <div id="resultado">
+            <img id="imagem" src="img/semrosto.png" alt="imagem">
+            <div id="restexto"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy;Celso_Araújo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
