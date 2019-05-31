@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analisando números | Celso Araújo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section id="secao">
+        <label for="numero">Adicione um número (1 a 100):</label>
+        <input type="number" name="numero" id="numero" min="1" max="100" placeholder="1 a 100" style="width: 75px"> 
+        <input type="button" value="Adicionar" onclick="adicionar()">
+        <div class="painel"> 
+            <select name="lista_num" id="lista_num" size="10" multiple></select>
+            <div class="resultado" id="resultado"></div>
+        </div>    
+        <input type="button" value="Analisar" onclick="analisar()">
+        <input type="button" value="Limpar" onclick="limpar(1)" style="margin-left: 24px">
+    </section>
+    <footer>
+        <p>&copy;Celso_Araújo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
