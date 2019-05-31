@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section id="secao">
+        <div id='msg' style="text-align: center"></div>
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" min="0" placeholder="0" style="width: 75px">
+        <input type="button" value="CALCULAR" onclick="tabuada()">
+        <div style="margin-top: 10px">
+            <select name="papel" id="papel" size="10">
+                <option value="">Digite um número</option>
+            </select>
+        </div>    
+    </section>
+    <footer>
+        <p>&copy;Celso_Araújo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
