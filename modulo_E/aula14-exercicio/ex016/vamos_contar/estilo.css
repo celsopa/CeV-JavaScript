@@ -1,0 +1,41 @@
+body{
+    background: rgb(141, 167, 129);
+    font: normal 15pt Arial;
+}
+
+header{
+    text-align: center;
+    color: rgb(33, 27, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+section{    
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+#formulario{
+    padding: 10pt;
+}
+
+#contagem{
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin: 10pt;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: rgb(33, 27, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
